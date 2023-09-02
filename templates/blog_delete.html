@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <form method="post" >
+    {%csrf_token%}
+    <h2>Do you really wanna delete?</h2>
+    <input type="submit" value="Delete">
+    <a href="{%url 'all_list'%}">Cancel</a>
+  </form>
+</body>
+</html>
